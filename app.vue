@@ -1,13 +1,14 @@
 <template>
 	<!-- Layout -->
-	<NuxtLayout name="custom">
+	<NuxtLayout :name="layout">
 		<!-- Page -->
 		<NuxtPage/>
 	</NuxtLayout>
 </template>
 
 <script setup>
-    const config = useRuntimeConfig()
+  const config = useRuntimeConfig()
+	const layout = "custom";
 </script>
 
 <script>
